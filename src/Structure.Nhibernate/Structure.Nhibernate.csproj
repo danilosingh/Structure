@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>danilosingh</Authors>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Multitenant\**" />
+    <Compile Remove="Repositories\**" />
+    <EmbeddedResource Remove="Multitenant\**" />
+    <EmbeddedResource Remove="Repositories\**" />
+    <None Remove="Multitenant\**" />
+    <None Remove="Repositories\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentNHibernate" Version="2.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="3.1.2" />
+    <PackageReference Include="NHibernate" Version="5.2.7" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Structure\Structure.csproj" />
+  </ItemGroup>
+
+</Project>

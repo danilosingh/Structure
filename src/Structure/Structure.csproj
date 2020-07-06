@@ -1,0 +1,64 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>danilosingh</Authors>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Application\Dtos\**" />
+    <Compile Remove="Domain\Validations\**" />
+    <Compile Remove="Security\Authorization\NewFolder\**" />
+    <EmbeddedResource Remove="Application\Dtos\**" />
+    <EmbeddedResource Remove="Domain\Validations\**" />
+    <EmbeddedResource Remove="Security\Authorization\NewFolder\**" />
+    <None Remove="Application\Dtos\**" />
+    <None Remove="Domain\Validations\**" />
+    <None Remove="Security\Authorization\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Security\Authorization\AuthorizationServiceExtensions.cs" />
+    <Compile Remove="Security\Authorization\ClaimsPrincipalFactory.cs" />
+    <Compile Remove="Security\Authorization\DefaultUserPropertyDescriptorProvider.cs" />
+    <Compile Remove="Security\Authorization\IRole.cs" />
+    <Compile Remove="Security\Authorization\IRolePermissionChecker.cs" />
+    <Compile Remove="Security\Authorization\IRolePermissionStore.cs" />
+    <Compile Remove="Security\Authorization\ISteUser.cs" />
+    <Compile Remove="Security\Authorization\IUserDescriptor.cs" />
+    <Compile Remove="Security\Authorization\IUserPermission.cs" />
+    <Compile Remove="Security\Authorization\IUserPermissionStore.cs" />
+    <Compile Remove="Security\Authorization\IUserPropertyDescriptorProvider.cs" />
+    <Compile Remove="Security\Authorization\IUserRole.cs" />
+    <Compile Remove="Security\Authorization\IUserStore.cs" />
+    <Compile Remove="Security\Authorization\RolePermissionChecker.cs" />
+    <Compile Remove="Security\Authorization\SignInManager.cs" />
+    <Compile Remove="Security\Authorization\UserPermissionChecker.cs" />
+    <Compile Remove="Security\Authorization\UserPropertyClaimCollection.cs" />
+    <Compile Remove="Security\Authorization\UserPropertyDescriptor.cs" />
+    <Compile Remove="Security\Authorization\UserPropertyTypes.cs" />
+    <Compile Remove="Security\Authorization\UserStore.cs" />
+    <Compile Remove="Security\Authorization\UserStoreOptions.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Session\e13eiael.ltv~" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Castle.Core" Version="4.4.0" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="3.0.0" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.6.0" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.0.19" />
+    <PackageReference Include="System.Runtime.Caching" Version="4.6.0" />
+    <PackageReference Include="System.Security.Cryptography.Xml" Version="4.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+</Project>

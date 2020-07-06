@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="logs\**" />
+    <Content Remove="logs\**" />
+    <EmbeddedResource Remove="logs\**" />
+    <None Remove="logs\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="5.1.3" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="5.0.1" />
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="Dapper" Version="2.0.30" />
+    <PackageReference Include="FluentNHibernate" Version="2.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="4.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="NHibernate" Version="5.2.7" />
+    <PackageReference Include="Npgsql" Version="4.1.3" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.1.0" />
+    <PackageReference Include="Serilog" Version="2.9.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="3.2.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="4.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Structure.AspNetCore\Structure.AspNetCore.csproj" />
+    <ProjectReference Include="..\Structure.Autofac\Structure.Autofac.csproj" />
+    <ProjectReference Include="..\Structure.AutoMapper\Structure.AutoMapper.csproj" />
+    <ProjectReference Include="..\Structure.Dapper\Structure.Dapper.csproj" />
+    <ProjectReference Include="..\Structure.Identity\Structure.Identity.csproj" />
+    <ProjectReference Include="..\Structure.Nhibernate\Structure.Nhibernate.csproj" />
+    <ProjectReference Include="..\Structure.RabbitMQ\Structure.RabbitMQ.csproj" />
+    <ProjectReference Include="..\Structure.Started.AspNetCore\Structure.Started.AspNetCore.csproj" />
+    <ProjectReference Include="..\Structure.Started.Common\Structure.Started.Common.csproj" />
+    <ProjectReference Include="..\Structure.Tests.Shared\Structure.Tests.Shared.csproj" />
+    <ProjectReference Include="..\Structure\Structure.csproj" />
+  </ItemGroup>
+
+</Project>
