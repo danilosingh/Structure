@@ -54,7 +54,7 @@
     <PackageReference Include="System.ComponentModel.Annotations" Version="4.6.0" />
     <PackageReference Include="System.Linq.Dynamic.Core" Version="1.0.19" />
     <PackageReference Include="System.Runtime.Caching" Version="4.6.0" />
-    <PackageReference Include="System.Security.Cryptography.Xml" Version="4.6.0" />
+    <PackageReference Include="System.Security.Cryptography.Xml" Version="4.7.1" />
   </ItemGroup>
 
   <ItemGroup>
